@@ -127,6 +127,7 @@ make ARCH=arm64 \
   KBUILD_BUILD_USER="builder" \
   KBUILD_BUILD_HOST="kdevbuilder" \
   LOCALVERSION=-kdev \
+  KCFLAGS="-Wno-unused-function" \
    -j$(nproc)
 
 make ARCH=arm64 \
@@ -134,6 +135,7 @@ make ARCH=arm64 \
   KBUILD_BUILD_USER="builder" \
   KBUILD_BUILD_HOST="kdevbuilder" \
   LOCALVERSION=-kdev \
+  KCFLAGS="-Wno-unused-function" \
   modules -j$(nproc)
 
 make ARCH=arm64 \
