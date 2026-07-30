@@ -146,6 +146,7 @@ make ARCH=arm64 \
   INSTALL_MOD_PATH=$(pwd)/kos \
   modules_install
 
+cat include/config/kernel.release
 
 # release kernel image
 ls -alh arch/arm64/boot/Image
